@@ -132,13 +132,16 @@ Animations
 */
 @keyframes rotate {
   0% {
-    transform: rotate3d(23deg, 267deg, 45deg);
+    transform: rotateX(23deg);
+    transform: rotateY(23deg);
   }
   50% {
-    transform: rotate3d(57deg, 89deg, 49deg);
+    transform: rotateX(46deg);
+    transform: rotateY(46deg);
   }
   100% {
-    transform: rotate3d(0deg, 0deg, 0deg);
+    transform: rotateX(0deg);
+    transform: rotateY(0deg);
   }
 }
 
@@ -147,54 +150,47 @@ Animations
 Navbar
 =================
 */
-.navbar {
-  min-height: 3rem;
-  position: sticky;
-  top: 0;
-  background: var(--clr-primary-4);
-}
-.nav-center {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.logo {
-  padding: 1rem 1.25rem 0;
-}
-.logo a h4 {
-  color: var(--clr-primary-1);
-  font-family: var(--ff-secondary);
-  font-size: 2rem;
-  text-shadow: 1px 2px 5px var(--clr-white);
-  text-transform: uppercase;
-}
-.nav-icon {
-  font-size: 2rem;
-  color: var(--clr-primary-1);
-  animation: rotate 2s linear infinite;
-}
+
 /* 
 =================
 Hero
 =================
 */
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../images/pexels-pixabay-37347.jpg);
+  background: var(--clr-primary-1);
   min-height: 100vh;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  color: var(--clr-white);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.hero h1 {
-  color: var(--clr-primary-5);
+.hero-banner {
   text-align: center;
 }
-.hero h2 {
+.hero-banner p {
+  max-width: 35rem;
+  font-size: 1.2rem;
+  letter-spacing: var(--spacing);
+}
+.hero-btn {
+  background: var(--clr-white);
   color: var(--clr-primary-1);
-  text-align: center;
+  padding: 0.75rem 1.25rem;
+}
+.hero-btn:hover {
+  background: transparent;
+  color: var(--clr-white);
+  border: 2px solid var(--clr-white);
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background: linear-gradient(rgb(88, 129, 87, 0.7), rgba(0, 0, 0, 0.7)),
+      url(../images/pexels-pixabay-37347.jpg) center/cover no-repeat;
+  }
+  .hero-banner {
+    padding: 0;
+  }
+  .hero-banner p {
+    max-width: 45rem;
+  }
 }
