@@ -184,6 +184,13 @@ p {
   text-align: center;
   margin-top: 2rem;
 }
+
+/* Media screen for galaxy z-fold */
+@media screen and (max-width: 374px) {
+  .video-text {
+    font-size: 0.7rem;
+  }
+}
 /*
 =============== 
 Navbar
@@ -206,9 +213,6 @@ Navbar
   text-transform: capitalize;
   justify-items: center;
   text-shadow: 2px 2px 5px var(--clr-grey-1);
-}
-.nav-logo h3 {
-  font-size: 2rem;
 }
 .nav-logo span {
   color: var(--clr-primary-5);
