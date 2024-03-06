@@ -820,7 +820,9 @@ Footer
 Single Page
 ===============
 */
-
+.page-info p {
+  text-align: justify;
+}
 /*
 =============== 
 Products Page
