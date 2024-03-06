@@ -859,7 +859,7 @@ Courses Page
 .course-container {
   position: relative;
 }
-.course-icon {
+.courses-icon {
   position: absolute;
   font-size: 1.75rem;
   bottom: 0;
