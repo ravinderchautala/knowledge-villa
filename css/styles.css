@@ -820,6 +820,10 @@ Footer
 Single Page
 ===============
 */
+.single-page {
+  background: var(--clr-primary-8);
+  min-height: calc(100vh - 5rem - 198px);
+}
 .page-info p {
   text-align: justify;
 }
